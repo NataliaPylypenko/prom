@@ -1,10 +1,10 @@
+import React from "react";
+import { Htag } from "../components";
 
 export default function Home(): JSX.Element {
   return (
-      <>
-        <main>
-          <h1>Hello React + Next.js</h1>
-        </main>
-      </>
+      <div>
+        <Htag tag='h1'>Курсы по Photoshop</Htag>
+      </div>
   );
 }
