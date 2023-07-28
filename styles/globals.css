@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	color: var(--neutral-dark);
+	color: var(--neutral-black);
 	background: #F5F6F8;
 
 	font-family: var(--ff_main);
@@ -29,13 +29,15 @@ a {
 	--success: #2DC37E;
 	--success-light: #C8F8E4;
 	--primary: #7653FC;
+	--primary-hover: #6344DF;
 	--primary-light: #F9F8FF;
 
 	/* Neutral Color */
-	--neutral-black: #000;
-	--neutral-dark: #3B434E;
-	--neutral-regular: #787D85;
-	--neutral-secondary: #BBB;
-	--neutral-light: #B3C0D9;
+	--neutral-black: #3B434E;
+	--neutral-dark: #787D85;
+	--neutral-regular: #BBB;
+	--neutral-secondary: #B3C0D9;
+	--neutral-gray: #E2E2E2;
+	--neutral-light: #EBEBEB;
 	--neutral-white: #FFF;
 }
