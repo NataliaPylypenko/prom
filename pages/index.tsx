@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Htag, P} from "../components";
+import {Button, Htag, Label, P} from "../components";
 
 export default function Home(): JSX.Element {
   return (
@@ -10,6 +10,10 @@ export default function Home(): JSX.Element {
           <P size='l'>Large</P>
           <P>Medium</P>
           <P size='s'>Small</P>
+          <Label size='m' color='red'>figma.com</Label>
+          <Label color='primary'>Web дизайн</Label>
+          <Label color='success'>-10 000 ₽ </Label>
+          <Label>Ghost</Label>
       </>
   );
 }

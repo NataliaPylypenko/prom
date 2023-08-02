@@ -1,7 +1,6 @@
 import { PProps } from './P.props';
 import styles from './P.module.css';
 import cn from "classnames";
-import ArrowIcon from "../Button/arrow.svg";
 
 export const P = ({ size = 'm', children , className, ...props}: PProps): JSX.Element => {
     return (
