@@ -16,25 +16,25 @@
 }
 
 .primary {
-	color: var(--neutral-white);
+	color: var(--white);
 	border: 1px solid transparent;
 	background-color: var(--primary);
 }
 
 .primary:hover {
-	background-color: var(--primary-hover);
+	background-color: var(--primaryDark);
 }
 
 .ghost {
-	color: var(--neutral-black);
-	border: 1px solid var(--neutral-light);
+	color: var(--darkSlateGray);
+	border: 1px solid var(--lightGray);
 	background: none;
 }
 
 .ghost:hover {
-	color: var(--neutral-white);
+	color: var(--white);
 	border: 1px solid transparent;
-	background-color: var(--primary-hover);
+	background-color: var(--primaryDark);
 }
 
 .arrow {
@@ -50,5 +50,5 @@
 
 .primary svg,
 .ghost:hover svg {
-	fill: var(--neutral-white);
+	fill: var(--white);
 }
