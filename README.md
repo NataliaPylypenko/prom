@@ -28,13 +28,13 @@ npm run build
 
 ### Project Structure:
 
-* `components/[name]/[name].module.css` -
-* `components/[name]/[name].props.ts` -
-* `components/[name]/[name].tsx` -
-* `components/index.ts` -
+* `components/[name]/[name].module.css` - component styles
+* `components/[name]/[name].props.ts` - input properties of the component
+* `components/[name]/[name].tsx` - the component itself
+* `components/index.ts` - root file for easy export
 
 * `pages/_app.tsx` -
-* `pages/_document.tsx` -
+* `pages/_document.tsx` - redefining the entire document
 * `pages/index.tsx` -
 
 * `.eslintrc` -
@@ -44,3 +44,35 @@ npm run build
 * `tsconfig.json` -
 * `types.d.ts` -
 
+
+### Example Component
+Create the component itself in `components/MyComponent/MyComponent.tsx`
+``` tsx
+import { MyComponentProps } from './MyComponent.props';
+import styles from './MyComponent.module.css';
+
+export const MyComponent = ({ text, children }: MyComponentProps): JSX.Element => {
+    return (
+        <div className="MyClass">
+            // ...
+        </div>
+    )
+};
+```
+
+Create input properties of the component in `components/MyComponent/MyComponent.props.ts`
+``` ts
+import { ReactNode } from 'react';
+
+export interface MyComponentProps {
+    children: ReactNode;
+    text: string;
+    // ...
+}
+```
+
+Create css module in `components/MyComponent/MyComponent.module.css`
+``` scss
+// here we write the CSS code
+.MyClass {}
+```
