@@ -76,3 +76,17 @@ Create css module in `components/MyComponent/MyComponent.module.css`
 // here we write the CSS code
 .MyClass {}
 ```
+
+### Example HOC
+
+```tsx
+export const HOCExample = <T extends Record<string, unknown>>(Component: FunctionComponent<T>) => {
+    return function WithWrapperComponent(props: T) {
+        return (
+            <div className="hoc-wrapper">
+                <Component {...props} />
+            </div>
+        )   
+    }
+}
+```
