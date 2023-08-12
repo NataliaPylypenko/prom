@@ -42,4 +42,10 @@ a {
 	--gray: #E2E2E2;
 	--lightGray: #EBEBEB;
 	--white: #FFF;
+
+	/* Media Query */
+	--desktop: 1493px;
+	--laptop: 1199px;
+	--tablet: 991px;
+	--mobile: 641px;
 }
