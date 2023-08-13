@@ -8,8 +8,8 @@
 
 .star svg {
 	margin-right: 5px;
-}
 
-.star svg:focus {
-	outline: none;
+	&:focus {
+		outline: none;
+	}
 }

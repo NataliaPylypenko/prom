@@ -33,9 +33,9 @@ npm run build
 * `components/[name]/[name].tsx` - the component itself
 * `components/index.ts` - root file for easy export
 
-* `pages/_app.tsx` -
+* `pages/_app.tsx` - a component that is a wrapper over the entire application
 * `pages/_document.tsx` - redefining the entire document
-* `pages/index.tsx` -
+* `pages/index.tsx` - main page
 
 * `.eslintrc` -
 * `.stylelintrc.json` -
